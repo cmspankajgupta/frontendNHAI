@@ -1,10 +1,10 @@
 import React from 'react'
 import Button from '@mui/material/Button';
-import './MuiButton.css'
+import './MuiButton.scss'
 
-function MuiButton({variant, name, className }) {
+function MuiButton({variant, name, className, sx }) {
   return (
-    <Button variant={variant} name={name} className={className}>{name}</Button>
+    <Button variant={variant} name={name} className="mui-btn"  sx={sx}>{name}</Button>
   )
 }
 
