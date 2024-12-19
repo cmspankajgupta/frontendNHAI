@@ -1,7 +1,18 @@
-import React from 'react'
+import * as React from 'react';
+import TextField from '@mui/material/TextField';
+import './MuiInput.scss'
 
-export const Input = () => {
+function MuiInput({variant, label, className, sx,...props}){
   return (
-    <div>Input</div>
+    <TextField
+      {...props}
+      sx={sx}
+      id="outlined-basic"  
+      variant={variant} 
+      label={label} 
+      className="muiInput"
+     />
   )
 }
+
+export default MuiInput;

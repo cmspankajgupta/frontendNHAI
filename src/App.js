@@ -1,12 +1,24 @@
-import MuiButton from './componetns/Button/MuiButton';
-import './App.css';
+import "@fontsource/inter"; 
+import '@fontsource/inter/100.css';
+import '@fontsource/inter/200.css';
+import '@fontsource/inter/300.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter/800.css';
+import '@fontsource/inter/900.css';
+import './App.scss';
+import Login from './Pages/Login';
+import Header from './componetns/Header/Header'
 
 function App() {
   return (
     <div className="App">
-      <MuiButton variant="contained" name="Login" className="btn-80"/>
-      <br/>
-      <MuiButton variant="outlined" name="Sign Up" className="btn-80"/>
+      <Header/>
+      <div className="Form-container">
+          <Login/>
+      </div>      
     </div>
   );
 }
