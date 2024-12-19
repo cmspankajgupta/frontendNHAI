@@ -61,11 +61,11 @@ const OtpForm = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          padding: 6,
+          padding: '3rem',
           paddingBottom: 0,
         }}
       >
-        <div style={{ marginBottom: "14px" }}>
+        <div style={{ marginBottom: "0.875rem" }}>
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ const OtpForm = () => {
           </svg>
         </div>
         <p className="head-xs head-black">Verify OTP</p>
-        <p className="body-xs font-regular" style={{ marginBottom: "40px" }}>
+        <p className="body-xs font-regular" style={{ marginBottom: "2.5rem" }}>
           OTP has been sent to{" "}
           <span className="font-medium">+91 9696789000 </span>
           <Link sx={{ textDecoration: "none" }} className="medium">
@@ -118,18 +118,18 @@ const OtpForm = () => {
                   type="tel"
                   required
                   sx={{
-                    marginBottom: "36px",
-                    width: "56px",
-                    height: "56px",
+                    marginBottom: "2.25rem",
+                    width: "3.5rem",
+                    height: "3.5rem",
                     "& .MuiInputBase-input": {
                       fontFamily: "var(--body-font-family)",
-                      fontSize: "16px",
+                      fontSize: "1rem",
                       fontStyle: "normal",
                       textAlign: "center",
                       fontWeight: 400,
-                      lineHeight: "24px",
+                      lineHeight: "1.5rem",
                       /* 150% */
-                      letterSpacing: "-0.08px",
+                      letterSpacing: "-0.005rem",
                     },
                   }}
                   onKeyDown={(e) => handleKeyDown(e, index)}
@@ -158,10 +158,10 @@ const OtpForm = () => {
             variant="contained"
             fullWidth
             sx={{
-              marginTop: "24px",
-              marginBottom: "28px",
+              marginTop: "1.5rem",
+              marginBottom: "1.75rem",
               background: `var(--brand-500)`,
-              borderRadius: "100px",
+              borderRadius: "6.25rem",
               fontWeight: `var(--body-text-medium)`,
             }}
           />

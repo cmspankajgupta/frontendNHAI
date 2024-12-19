@@ -1,39 +1,40 @@
 .Form-container {
-    background: #fdfdfd;
+    background: #ecf0f5;
     width: 100%;
     background-image: url(../assests/form-bg.png);
     background-repeat: no-repeat;
-    background-position: bottom left -387px;
+    background-position: bottom -18rem left -4.188rem;
     margin: 0 auto;
-    background-size: 130%;
+    background-size: 110%;
 }
 
 .LoginContainer {
-    width: 450px;
+    min-width: 28.125rem;
+    // max-width: 100%;
     background: #fff;
-    border-radius: 24px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 1.5rem;
+    box-shadow: 0px 0.125rem 0.25rem 0px rgba(0, 0, 0, 0.16);
     float: right;
 }
 .login-page {
-    max-width: 1440px;
-    min-height: 1024px;
-    height: 100vh;
+    max-width: 90rem;
+    height: 64rem;
+    max-height: 100vh;
     width: 86%;
     margin: 0 auto;
     justify-content: flex-end;
     display: flex;
-    padding-top: 120px;
+    padding-top: 7.5rem;
     
 }
 .left-section, .right-section{ flex:1 }
 .left-section > .loginTitle {
     color: var(--grey-800, #212121);
-    font-size: 56px;
+    font-size: 3.5rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 72px;
-    letter-spacing: -0.56px;
+    line-height: 4.5rem;
+    letter-spacing: -0.035rem;
 }
 .loginTitle{
     margin-top: 5rem

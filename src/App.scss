@@ -7,13 +7,29 @@
   box-sizing: border-box;
   font-family: 'Inter';
 }
+html {
+  font-size: 0.844vw; /* Base font size */
+}
+
+@import url("@fontsource/inter"); 
+@import url('@fontsource/inter/100.css');
+@import url('@fontsource/inter/200.css');
+@import url('@fontsource/inter/300.css');
+@import url('@fontsource/inter/400.css');
+@import url('@fontsource/inter/500.css');
+@import url('@fontsource/inter/600.css');
+@import url('@fontsource/inter/700.css');
+@import url('@fontsource/inter/800.css');
+@import url('@fontsource/inter/900.css');
+
+
 /* Set up custom properties (CSS variables) for consistency */
 :root {
   --primary-color: #007bff; /* Example primary color */
   --secondary-color: #6c757d; /* Secondary color */
  
-  --button-border-radius: 4px;
-  --input-border-radius: 4px;
+  --button-border-radius: 0.25rem;
+  --input-border-radius: 0.25rem;
   --transition-speed: 0.3s ease-in-out;
 
   /* Heading text font weight*/
@@ -28,11 +44,11 @@
   --body-text-bold: 700; 
 
   /* Font size for body text */
-  --font-size-lg: 24px;
-  --font-size-med: 18px; 
-  --font-size-sm: 16px;
-  --font-size-xs: 14px;
-  --font-szie-xxs: 12px; 
+  --font-size-lg: 1.5rem;
+  --font-size-med: 1.125rem; 
+  --font-size-sm: 1rem;
+  --font-size-xs: 0.875rem;
+  --font-szie-xxs: 0.75rem; 
 
   
 
@@ -118,74 +134,74 @@
 /* Utility Classes */
 .text-center {  text-align: center;}
 .text-right {  text-align: right;}
-.mb-28 {  margin-bottom: 28px;}
-.mt-28 {  margin-top: 28px;}
-.mt-32 {  margin-top: 32px;}
-.mb-32 {  margin-bottom: 32px;}
-.pt-32 {  padding-top: 32px;}
-.pb-32 {  padding-bottom: 32px;}
+.mb-28 {  margin-bottom: 1.75rem;}
+.mt-28 {  margin-top: 1.75rem;}
+.mt-32 {  margin-top: 2rem;}
+.mb-32 {  margin-bottom: 2rem;}
+.pt-32 {  padding-top: 2rem;}
+.pb-32 {  padding-bottom: 2rem;}
 .head-black{ font-weight: var(--heading-black);}
 .head-bold{ font-weight: var( --heading-bold);}
 .text-400{ font-weight: var(--body-text-regular);}
 .text-500{ font-weight: var(--body-text-medium);} 
 .text-700{ font-weight: var(--body-text-bold);}
 .block{display: block;}
-
+.error{color: var(--red-500)}
 
 /* Typography */
 .head-xl{
-  font-size: 88px;
+  font-size: 5.5rem;
   font-style: normal;
-  line-height: 92px;
-  letter-spacing: -0.88px;
+  line-height: 5.75rem;
+  letter-spacing: -0.055rem;
 }
 .head-l{
-  font-size: 64px;
+  font-size: 4rem;
   font-style: normal;
-  line-height: 68px;
-  letter-spacing: -0.64px;
+  line-height: 4.25rem;
+  letter-spacing: -0.04rem;
 }
 .head-m{
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
-  line-height: 44px;
-  letter-spacing: -0.4px;
+  line-height: 2.75rem;
+  letter-spacing: -0.025rem;
 }
 .head-s{
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
-  line-height: 36px; 
-  letter-spacing: -0.32px;
+  line-height: 2.25rem; 
+  letter-spacing: -0.02rem;
 }
 
 .head-xs{
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
-  line-height: 36px;
-  letter-spacing: -0.24px;
+  line-height: 2.25rem;
+  letter-spacing: -0.015rem;
 }
 .head-xxs{
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
-  line-height: 24px; 
-  letter-spacing: -0.16px;
+  line-height: 1.5rem; 
+  letter-spacing: -0.01rem;
 }
 
 
 /* Regular text */
 .text-regular-l{
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px;
-  letter-spacing: -0.12px;
+  line-height: 2rem;
+  letter-spacing: -0.008rem;
 }
 .text-regular-m{
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 36px;
-  letter-spacing: -0.12px;
+  line-height: 2.25rem;
+  letter-spacing: -0.008rem;
 }
 
 
@@ -218,7 +234,7 @@ a:hover {  color: var(--secondary-color);}
 
 .col {
   flex: 1;
-  min-width: 200px;
+  min-width: 12.5rem;
 }
 
 
