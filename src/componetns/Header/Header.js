@@ -29,13 +29,18 @@ const Header = () => {
   const handleDrawerToggle = () => setDrawerOpen(!drawerOpen);
 
   return (
+    <div className="DesktopMenu-section">
     <AppBar
-      sx={{ backgroundColor: "#fdfdfd", boxShadow: "none", color: "black", }}
+      sx={{ backgroundColor: "#ecf0f5", boxShadow: "none", color: "black",}}
     >
       <Toolbar
         sx={{
           justifyContent: "space-between",
           padding: isMobile ? "0 8px" : "0",
+          maxWidth: '80%',
+          marginLeft: '10%',
+           marginRight: '10%'
+          // margin: '0 auto'
         }}
       >
         <Box display="flex" alignItems="center">
@@ -146,6 +151,7 @@ const Header = () => {
         </Drawer>
       </Toolbar>
     </AppBar>
+    </div>
   );
 };
 

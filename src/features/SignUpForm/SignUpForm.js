@@ -1,10 +1,10 @@
-import "./LoginForm.scss";
+import "./SignUpForm.scss";
 import { Box } from "@mui/material";
 import MuiInput from "../../componetns/Input/MuiInput";
 import MuiButton from "../../componetns/Button/MuiButton";
 import DigitalIndia from "../../assests/DigitalIndia.svg";
-
-const Login = () => {
+import ArrowBack from '../../assests/arrow_back.svg';
+const Signup = () => {
   return (
     <div className="LoginContainer">
       <Box
@@ -15,24 +15,28 @@ const Login = () => {
           paddingBottom: 0,
         }}
       >
-        <p className="head-xs head-black mb-32">Login</p>
+        <img src={ArrowBack} alt="Arrow Back" style={{width: '2rem', marginBottom: '0.875rem'}}/>
+        <p className="head-xs head-black mb-32">Sign Up</p>
         <form
           style={{ width: "100%", display: "flex", flexDirection: "column" }}
         >
           <MuiInput
             variant="outlined"
-            label="Registered Mobile Number"
+            label="SAP/Employee ID"
             className="mb-2"
             type="tel"
             required
             sx={{
-              marginBottom: "32px",
+              marginBottom: "2.25rem",
               height: "3.125rem",
             }}
           />
+          <p className="text-left getHelpContainer mb-28">
+          <a href="#" className="getHelp">I don’t have a SAP/Employee ID</a>
+        </p>  
           <MuiButton
             type="submit"
-            name="Login using OTP"
+            name="Proceed"
             variant="contained"
             fullWidth
             sx={{
@@ -42,25 +46,7 @@ const Login = () => {
               fontWeight: `var(--body-text-medium)`
             }}
           />
-        </form>
-        <div className="separator-text text-center mb-28">- or -</div>
-        <p className="separator-text text-center mb-28">
-          <a className="link" href="#">Don’t have an account?</a>
-        </p>
-        <MuiButton
-          name="Sign Up"
-          variant="outlined"
-          sx={{
-            marginBottom: "2rem",
-            borderRadius: "6.25rem",
-            color: "brand-500",
-            borderColor: "brand-200",
-          }}
-        />
-        <p className="text-center getHelpContainer mb-28">
-          <span>Having trouble logging in? </span>
-          <a href="#" className="getHelp">Get Help</a>
-        </p>       
+        </form>     
       </Box>
       <div className="login-footer">
             <span>powered by </span>
@@ -70,4 +56,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

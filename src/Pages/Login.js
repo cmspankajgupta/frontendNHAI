@@ -1,5 +1,6 @@
 import LoginForm from "../features/LoginForm/LoginForm"
 import OtpForm from "../features/OtpForm/OtpForm";
+import SignUpForm from "../features/SignUpForm/SignUpForm";
 import './Login.scss';
 
 function Login(){
@@ -9,6 +10,7 @@ function Login(){
        <div className="right-section  mt-32">
         {/* <LoginForm/> */}
         <OtpForm/>
+        {/* <SignUpForm/> */}
        </div>
     </div>
 )}
